@@ -9,4 +9,4 @@ I will show how to make that in this repo. Total cost will not exceed 400RMB(Ras
 Here is the gif of demo:  
 ![DEMO-GIF](https://github.com/cocoakang/get-gloved/blob/master/demo.gif)
 
-[Video link]().
+[Video link](https://youtu.be/XEdwyA8EEzc).
