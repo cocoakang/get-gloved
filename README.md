@@ -1,4 +1,4 @@
-## Get GLoved
+## Get Gloved
 
 ### About
 Do you want to find all the Infinity Gems to obtain Thanos' power?  
