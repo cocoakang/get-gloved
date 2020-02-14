@@ -9,7 +9,7 @@
 title:       Get Yourserlf Gloved
 email:       'cocoa_kang@zju.edu.cn'
 description: ''
-baseurl:     '' # The subpath of your site, e.g. /blog
+baseurl:     '/get-gloved' # The subpath of your site, e.g. /blog
 url:         'http://cocoakang.github.io/get-gloved/' # The base hostname & protocol for your site
 twitter:     ''
 github:      ''
