@@ -10,3 +10,6 @@ Here is the gif of demo:
 ![DEMO-GIF](https://github.com/cocoakang/get-gloved/blob/master/demo.gif)
 
 [Video link](https://youtu.be/XEdwyA8EEzc).
+
+### Tutorial
+I described how I made this [here](http://cocoakang.cn/get-gloved/).(not completed)
