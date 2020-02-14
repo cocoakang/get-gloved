@@ -6,9 +6,9 @@
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
 
-  <title>About</title>
-  <meta name='description' content="">
-  <link rel='canonical' href="http://localhost:4000/about.html">
+  <title>About This Project</title>
+  <meta name='description' content="Interaction is one of the central problems in VR system. A good way for user to interact with synthetic world can enhance the immersive experience. Today, us...">
+  <link rel='canonical' href="http://localhost:4000/2020/02/14/about-this-project/">
   <link rel='alternate' type='application/rss+xml' title='Get yourserlf gloved' href="http://localhost:4000/feed.xml">
 
   <style>
@@ -100,29 +100,80 @@
 
 </header>
 
-    <div class='o-wrapper'>
+    
 
+
+  <meta itemprop='og:image' content='http://localhost:4000/images/posts/teaser.jpg'>
+
+
+<div class='o-wrapper'>
   <div class='o-grid'>
     <div class='o-grid__col'>
-      <article class='c-post'>
-        <h1 class='c-post__title u-text-center'>About</h1>
+      <article class='c-post' itemscope itemtype='http://schema.org/BlogPosting'>
 
-        <div class='c-content'>
+        <h1 class='c-post__title u-text-center'>About This Project</h1>
+
+        <time class='c-post__date' datetime='2020-02-14T00:00:00+08:00' itemprop='datePublished'>14 Feb 2020</time>
+
+        <div class='c-content' itemprop='articleBody'>
           
-  <img src='/images/pages/about.jpeg' class='c-post__image' alt='About'>
+  <img src='/images/posts/teaser.jpg' class='c-post__image' alt='About This Project'>
 
 
-          <p>You love Minimalism, and you also love writing, Type is designed for you. Type focus on showing your content in a clean and simple way, focus on images, typography, and white space.</p>
+          <p>Interaction is one of the central problems in VR system. A good way for user to interact with synthetic world can enhance the immersive experience. Today, using consumer VR handles is a dominant way to get input from user. However, the feeling of using a pair of handles is barely like how we interact with the real world, i.e. using hand. On the other side, directly capturing hand motion with computer vision is a quite hard problem, in which occlution and light condition must be considered carefully. Data glove is an elegant way to solve that problem, which captures hand gesture with sensors. Nevertheless, the high price of data glove holds most consumer back.</p>
 
-<p>This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at <a href="http://jekyllrb.com/">jekyllrb.com</a></p>
+<p>In this project, I build a low cost data glove with <a href="https://en.wikipedia.org/wiki/Inertial_measurement_unit">IMU</a>. The total cost doesn’t exceed 15$(Raspberry pi excluded), and the result is quite appealing.</p>
 
-<p>Lorem ipsum dolor sit amet, vix ut case porro facilisis, alia possit neglegentur vis te. Has cu eirmod abhorreant, vel civibus efficiantur cu. Eu summo elitr vix, iusto putant maluisset per ut, ne etiam vivendum adipisci vel. Vis omnis tempor accusam ei, justo perpetua liberavisse cu qui. Saperet aliquando adipiscing ius ne, ne facer euripidis est. Pro mundi nostrum suavitate et.</p>
+<p>I will explain most technical details in this post. Any idea to make this project better is welcomed! Or if you want to know some details I didn’t explained clearly, open an issue in github.</p>
+
+<h3 id="contents">contents</h3>
+
+<ol>
+  <li><a href="">About This Project</a></li>
+  <li>Basic of IMU</li>
+  <li>Using DMP</li>
+  <li>Ethernet communication</li>
+  <li>Get more IMUs(using TCA9548)</li>
+  <li>Rendering in Unity3d</li>
+</ol>
 
         </div>
+
+        <div class='c-tags'>
+          
+            <a href='/tag/frontpage'>frontpage</a>
+          
+            <a href='/tag/jekyll'>jekyll</a>
+          
+            <a href='/tag/blog'>blog</a>
+          
+        </div>
+
+        <hr>
+
+        <section class='disqus'>
+  <div id='disqus_thread'></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'http://localhost:4000/2020/02/14/about-this-project/';
+    };
+
+    (function() {
+      var d = document, s = d.createElement('script');
+
+      // Change `aspirethemes-demos` with your Disqus shortcode
+      s.src = '//aspirethemes-demos.disqus.com/embed.js';
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href='https://disqus.com/?ref_noscript' rel='nofollow'>comments powered by Disqus.</a></noscript>
+</section>
+
       </article>
     </div>
   </div>
-
 </div>
 
     <footer class='c-footer'>
