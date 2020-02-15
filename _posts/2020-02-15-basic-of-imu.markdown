@@ -9,7 +9,7 @@ image: '/images/posts/imu.jpg'
 
 [IMU](https://en.wikipedia.org/wiki/Inertial_measurement_unit)(Inertial measurement unit) is a kind of sensor to measure the acceleration, rotationrate or orientation of the device. There are a lot of types off the shelf in the market, and [MPU6050](https://www.invensense.com/products/motion-tracking/6-axis/mpu-6050/) is one of them.
 
-I don't want to describe all details about how to control a sensor like that, since there are so many blogs talk about that. What I am going to focus on is the pitfalls and something else you can not easily found on Internet. If you have no knowledge about how to contorl MPU6050, I recommend you to read this [blog](https://tutorials-raspberrypi.com/measuring-rotation-and-acceleration-raspberry-pi/).
+I don't want to describe all details about how to control a sensor, since there are so many blogs. What I am going to focus on is the pitfalls and something else you can not easily found on Internet. If you have no knowledge about how to contorl MPU6050, I recommend you to read this [blog](https://tutorials-raspberrypi.com/measuring-rotation-and-acceleration-raspberry-pi/).
 
 ## Contents
 1. Communicate in python or c++
