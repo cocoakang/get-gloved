@@ -24,7 +24,7 @@ This project is going to make a data glove, so real-time response is the biggest
 
 In i2cdevlib, there is an [example file](https://github.com/jrowberg/i2cdevlib/blob/master/RaspberryPi_bcm2835/MPU6050/examples/MPU6050_example_1.cpp) for Raspberry Pi to control MPU6050. However, it includes arduino's implementation, MPU6050.h and MPU6050.cpp, specifically. In those arduino files, some AVR built-in functions are called, which let the compiler complain. I adjust the arduino files for Raspberry pi, which you can find in src/raspberry_pi/ .
 
-It worth noting that the example file ask for bcm2835 library. Help of install bcm2835 can be found [here](https://www.airspayce.com/mikem/bcm2835/).
+It worth noting that the example file asks for bcm2835 library. Help of install bcm2835 can be found [here](https://www.airspayce.com/mikem/bcm2835/).
 
 ## Circuit pitfalls
 ### About I2C and address
