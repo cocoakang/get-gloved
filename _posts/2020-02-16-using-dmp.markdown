@@ -16,7 +16,7 @@ This time, ***MPU6050_6Axis_MotionApps20.h*** is needed. It includes ***MPU6050.
 #define MPU6050_INCLUDE_DMP_MOTIONAPPS20
 #include"MPU6050.h"
 ```
-The rewritten [header file]() can be found in /src/raspberry_pi/.
+The rewritten [files](https://github.com/cocoakang/get-gloved/tree/master/src/raspberry_pi) can be found in /src/raspberry_pi/.
 
 ### about WHO_AM_I register
 testConnection is a function to read MPU6050's register at 0x75. If the returned value is not 0x68, typically this MPU6050 sensor is broken. Although The raw data from accelerator meters and gyroscopes can be accessed normally, the DMP part crashes under that condition.
