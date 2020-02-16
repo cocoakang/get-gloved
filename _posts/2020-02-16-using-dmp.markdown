@@ -2,7 +2,7 @@
 layout: post
 title: Using DMP
 tags: [frontpage, jekyll, blog]
-image: '/images/posts/teaser.jpg'
+image: '/images/posts/dmp.png'
 ---
 
 DMP(Digital Motion Processer) can be seen as a small processor which is embedded in MPU6050 and has its own memory. With this unit, our CPU on Raspberry Pi can be saved from the tedious computation of merging motion. The program on Raspberry Pi no longer needs to maintain the raw data from accelerator meters and gyroscopes. All things will be done on MPU6050.  
