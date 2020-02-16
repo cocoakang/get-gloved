@@ -1,0 +1,26 @@
+---
+layout: post
+title: Using DMP
+tags: [frontpage, jekyll, blog]
+image: '/images/posts/teaser.jpg'
+---
+
+DMP(Digital Motion Processer) can be seen as a small processor which is embedded in MPU6050 and has its own memory. With this unit, our CPU on Raspberry Pi can be saved from the tedious computation of merging motion. The program on Raspberry Pi no longer needs to maintain the raw data from accelerator meters and gyroscopes. All things will be done on MPU6050.  
+  
+So how can we exploit this powerful unit?  
+    
+Good news is that there is still an example in i2cdevlib.[link](https://github.com/jrowberg/i2cdevlib/tree/master/Arduino/MPU6050/examples/MPU6050_DMP6), while bad news is Arduino version provided only.   
+  
+This time, ***MPU6050_6Axis_MotionApps20.h*** is needed. It includes ***MPU6050.h*** and defined some variables, so it is not that like a header file but a cpp file. In my project, there are more than one places need to include this header file, so I rewrite this file as cpp as well as change some AVR functions to Raspberry Pi version. So you just need include ***MPU6050.h*** now and define MPU6050_INCLUDE_DMP_MOTIONAPPS20 before that, like:
+```C++
+#define MPU6050_INCLUDE_DMP_MOTIONAPPS20
+#include"MPU6050.h"
+```
+The rewritten [header file]() can be found in /src/raspberry_pi/.
+
+### about WHO_AM_I register
+testConnection is a function to read MPU6050's register at 0x75. If the returned value is not 0x68, typically this MPU6050 sensor is broken. Although The raw data from accelerator meters and gyroscopes can be accessed normally, the DMP part crashes under that condition.
+
+### About calibration
+In my rewritten cpp file, the calibration function needs two more arguments, recalib_needed and pf. That is because we just need calibrate sensors once and save the calibrated data into files, and load that data later without calibration step.  
+One more thing you need to be careful is: There MUST be some delay between mpu.initialize() and mpu.dmpInitialize(); Typically, the delay should be longer that 5ms. Otherwise you will get a garbage sensor. You can check the output of bias. If some data is(are) blank(s) under this log *X Accel  Y Accel  Z Accel   X Gyro   Y Gyro   Z Gyro*, it means the dmpinitialization didn't end normally. You may set more delay under that condition.

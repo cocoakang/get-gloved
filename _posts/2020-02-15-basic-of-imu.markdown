@@ -36,4 +36,4 @@ On Raspberry Pi 4B, there are two i2c bus. Bus1 is exposed to user. I heared tha
 When you get this error, you may change the i2c bus in I2Cdev.cpp.
 
 ### MPU6050 VCC
-MPU6050 is working in VCC3.3 environment. Plug VCC5 to MPU6050 is dangerous.
+MPU6050 is working in VCC3.3 environment. Pluging VCC5 to MPU6050 is dangerous.
