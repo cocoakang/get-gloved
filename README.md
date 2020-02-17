@@ -12,4 +12,4 @@ Here is the gif of demo:
 [Video link](https://youtu.be/XEdwyA8EEzc).
 
 ### Tutorial
-I described how I made this [here](http://cocoakang.cn/get-gloved/).(not completed)
+I post how I made this [here](http://cocoakang.cn/get-gloved/).
