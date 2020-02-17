@@ -16,6 +16,6 @@ I will explain most technical details in this post. Any idea to make this projec
 1. [About This Project](http://cocoakang.cn/get-gloved/2020/02/14/about-this-project/)
 2. [Basic of IMU](http://cocoakang.cn/get-gloved/2020/02/15/basic-of-imu/)
 3. [Using DMP](http://cocoakang.cn/get-gloved/2020/02/16/using-dmp/)
-4. [communication](http://cocoakang.cn/get-gloved/2020/02/17/communication/)
+4. [Communication](http://cocoakang.cn/get-gloved/2020/02/17/communication/)
 5. [Get more IMUs](http://cocoakang.cn/get-gloved/2020/02/17/get-more-imus/)
 6. Rendering in Unity3d
